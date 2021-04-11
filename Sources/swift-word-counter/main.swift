@@ -4,12 +4,20 @@ import Foundation
 struct Count: ParsableCommand {
     static let configuration = CommandConfiguration(abstract: "Word counter.")
     
+    // 按顺序读取，不能指定
+//    @Argument var inputFile: String
+//    @Argument var outputFile: String
+    
+    // 可以指定顺序,   -i, --input <input>     A file to read.
     @Option(name: [.short, .customLong("input")], help: "A file to read.")
     var inputFile: String
-
+    
+    //   -o, --output <output>   A file to save word counts to.
     @Option(name: [.short, .customLong("output")], help: "A file to save word counts to.")
     var outputFile: String
 
+    // 添加标志, 显示输入参数
+    //   -v, --verbose           Print status updates while counting. 
     @Flag(name: .shortAndLong, help: "Print status updates while counting.")
     var verbose = false
 

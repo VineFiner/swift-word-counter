@@ -1,4 +1,4 @@
-# swift-word-counter
+# 单词统计器
 
 A description of this package.
 
@@ -32,7 +32,7 @@ products: [
 ```
 ## Using Custom Names
 
-### flag on first
+### 标识 放在第一位
 
 ```
 ➜  swift-word-counter git:(main) ✗ swift run count -v -i readme.md -o readme.counts
@@ -42,7 +42,7 @@ Found 66 words.
 ➜  swift-word-counter git:(main) ✗
 ```
 
-### flag on last
+### 标识放在最后一位
 
 ```
 ➜  swift-word-counter git:(main) ✗ swift run count --input readme.md --output readme.counts -v
@@ -51,7 +51,7 @@ Found 70 words.
 ➜  swift-word-counter git:(main) ✗
 ```
 
-### Change the order of parameters 
+### 改变输入顺序
 ```
 ➜  swift-word-counter git:(main) ✗ swift run count -o readme.counts -i readme.md --verbose
 Counting words in 'readme.md' and writing the result into 'readme.counts'.
